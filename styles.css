@@ -1,0 +1,202 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Меню */
+nav {
+    text-align: center;
+    background: #444;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Контент */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Текст */
+h2 {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Зображення */
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 40px;
+}
+/* Переваги з картинками */
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.advantage {
+    text-align: center;
+    width: 30%;
+}
+
+.advantage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* Секція послуг */
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service {
+    width: 30%;
+    background: #e6e6e6;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-title {
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.service-description {
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+/* Стилі для таблиці */
+.printing-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+}
+
+.printing-table th, .printing-table td {
+    border: 2px solid #333;
+    padding: 15px;
+}
+
+.printing-table th {
+    background-color: #444;
+    color: white;
+}
+
+/* Стилі для галереї */
+.gallery-slider {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.gallery-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Центрування та стилізація контактної інформації */
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Форма */
+.contact-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}

@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакти | 3D-Друк</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
         <h1>Контакти</h1>
-        <nav>
-            <a href="index.html">Головна</a> |
-            <a href="about.html">Про нас</a> |
-            <a href="3d-printing.html">3D-Друк</a> |
-            <a href="contact.html">Контакти</a>
-        </nav>
     </header>
 
-    <section>
-        <h2>Зв'яжіться з нами</h2>
-        <p>Якщо у вас є питання або вам потрібна консультація, звертайтеся:</p>
-        <ul>
-            <li><b>Email:</b> example@email.com</li>
-            <li><b>Телефон:</b> +38 (050) 123-45-67</li>
-            <li><b>Адреса:</b> Київ, Україна</li>
-        </ul>
-    </section>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="3d-printing.html">3D-Друк</a>
+        <a href="contact.html">Контакти</a>
+    </nav>
+
+    <div class="container">
+        <h2>Контактна інформація</h2>
+        <p><b>📞 Телефон:</b> +38 (050) 123-45-67</p>
+        <p><b>📞 Телефон:</b> +38 (097) 987-65-43</p>
+        <p><b>📧 Email:</b> contact@3dprint.com</p>
+
+        <h2>Зв'яжіться зі мною!</h2>
+        <form class="contact-form">
+            <label for="phone">Ваш номер телефону:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+38 (0__) ___-__-__" required>
+            <button type="submit">Надіслати</button>
+        </form>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Каріна Кринцька | 3D-Друк | Усі права захищені</p>
+        &copy; 2025 3D-Друк | Усі права захищені
     </footer>
 
 </body>

@@ -3,38 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D-Друк | Інформація</title>
+    <title>Послуги 3D-Друку</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 </head>
 <body>
 
     <header>
-        <h1>3D-Друк</h1>
-        <nav>
-            <a href="index.html">Головна</a> |
-            <a href="about.html">Про нас</a> |
-            <a href="3d-printing.html">3D-Друк</a> |
-            <a href="contact.html">Контакти</a>
-        </nav>
+        <h1>Наші послуги</h1>
     </header>
 
-    <section>
-        <h2>Що таке 3D-друк?</h2>
-        <p>3D-друк – це технологія створення об'ємних об'єктів шляхом накладання матеріалу пошарово.
-           Він використовується у медицині, інженерії, дизайні та багатьох інших галузях.</p>
-    </section>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="3d-printing.html">3D-Друк</a>
+        <a href="contact.html">Контакти</a>
+    </nav>
 
-    <section>
-        <h2>Типи 3D-друку</h2>
-        <ul>
-            <li><b>FDM</b> – моделювання методом наплавлення (пластикові деталі).</li>
-            <li><b>SLA</b> – лазерна стереолітографія (високоточний друк смолами).</li>
-            <li><b>SLS</b> – селективне лазерне спікання (металевий або порошковий друк).</li>
-        </ul>
-    </section>
+    <div class="container">
+        <h2>Обeріть свій тип друку:</h2>
+        <table class="printing-table">
+            <tr>
+                <th>Тип друку</th>
+                <th>Матеріали</th>
+                <th>Ціна</th>
+                <th>Час виконання</th>
+            </tr>
+            <tr>
+                <td>FDM</td>
+                <td>PLA, ABS, Nylon, PETG, PS, TPU</td>
+                <td>від 5 грн/г</td>
+                <td>1-2 дні</td>
+            </tr>
+            <tr>
+                <td>SLA</td>
+                <td>Фотополімер</td>
+                <td>від 15 грн/г</td>
+                <td>2-4 дні</td>
+            </tr>
+            <tr>
+                <td>SLM</td>
+                <td>Титан</td>
+                <td>від 1000 грн/г</td>
+                <td>від 4 робочих днів</td>
+            </tr>
+        </table>
+
+        <h2>ГАЛЕРЕЯ</h2>
+        <div class="gallery-slider">
+            <div><img src="https://3d-services.ru/wp-content/uploads/2022/12/3d-pechat-krylchatok-po-tekhnologii-fdm.jpg" alt="Приклад 3D-друку 1"></div>
+            <div><img src="https://static.wixstatic.com/media/f0d248_9669428810c541c59187f80ccc655a8c~mv2.png/v1/fill/w_640,h_556,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0d248_9669428810c541c59187f80ccc655a8c~mv2.png" alt="Приклад 3D-друку 2"></div>
+            <div><img src="https://image.made-in-china.com/202f0j00ycflkgUhvrGI/Custom-OEM-Prototype-Manufacturers-Precision-CNC-Titanium-Machining-3D-Printed-Parts.webp" alt="Приклад 3D-друку 3"></div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Каріна Кринцька | 3D-Друк | Усі права захищені</p>
+        &copy; 2025 3D-Друк | Усі права захищені
     </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.gallery-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
 
 </body>
 </html>
