@@ -33,24 +33,26 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Контент */
+/* Основний контейнер */
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     background: white;
     padding: 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-/* Текст */
+/* Заголовки */
 h2 {
     font-size: 26px;
     margin-top: 20px;
 }
 
+/* Текст */
 p {
+    color: #333; !important;
     font-size: 18px;
     line-height: 1.6;
 }
@@ -77,6 +79,7 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
 /* Переваги з картинками */
 .advantages {
     display: flex;
@@ -95,7 +98,7 @@ footer {
     border-radius: 10px;
 }
 
-/* Секція послуг */
+/* Стилі для секції послуг */
 .services {
     display: flex;
     justify-content: space-around;
@@ -124,38 +127,52 @@ footer {
     padding: 15px;
     border-radius: 0 0 15px 15px;
 }
+
 /* Стилі для таблиці */
-.printing-table {
+.custom-table {
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
     border-collapse: collapse;
     text-align: center;
     font-size: 18px;
 }
 
-.printing-table th, .printing-table td {
+.custom-table th, .custom-table td {
     border: 2px solid #333;
     padding: 15px;
 }
 
-.printing-table th {
+.custom-table th {
     background-color: #444;
     color: white;
 }
 
-/* Стилі для галереї */
-.gallery-slider {
-    width: 80%;
-    margin: 20px auto;
-}
-
-.gallery-slider img {
-    width: 100%;
-    height: auto;
+.custom-table img {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100px;
 }
-/* Центрування та стилізація контактної інформації */
+
+/* Галерея */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-gallery img:hover {
+    transform: scale(2);
+}
+
+/* Контактна інформація */
 .container h2 {
     text-align: center;
 }
