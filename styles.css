@@ -46,6 +46,7 @@ nav a:hover {
 
 /* Заголовки */
 h2 {
+    text-align: center;
     font-size: 26px;
     margin-top: 20px;
 }
@@ -135,6 +136,7 @@ footer {
     border-collapse: collapse;
     text-align: center;
     font-size: 18px;
+    background-color: #fff; /* Основний фон таблиці */
 }
 
 .custom-table th, .custom-table td {
@@ -145,6 +147,17 @@ footer {
 .custom-table th {
     background-color: #444;
     color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Чередування рядків */
+}
+
+.custom-table tr:hover {
+    background-color: #ddd; /* Ефект при наведенні */
 }
 
 .custom-table img {
@@ -152,6 +165,7 @@ footer {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 100px;
 }
+
 
 /* Галерея */
 .image-gallery {
@@ -217,3 +231,42 @@ footer {
 .contact-form button:hover {
     background-color: #555;
 }
+/*стилі для списків */
+ol, ul, dl {
+    background-color: #f9f9f9; /* Фон списків */
+    border: 1px solid #ccc; /* Межі списку */
+    padding: 10px; /* Заповнення всередині */
+    border-radius: 5px; /* Закруглення кутів */
+}
+
+ol {
+    list-style-type: upper-roman;
+    padding-left: 20px;
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+dl dt {
+    font-weight: bold;
+    font-size: 20px;
+    color: #222;
+    text-transform: uppercase;
+    border-bottom: 2px solid #444; /* Додає лінію під визначеннями */
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+dl dd {
+    font-size: 18px;
+    color: #555;
+    margin-left: 10px;
+}
+
