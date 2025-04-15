@@ -560,3 +560,86 @@ h2 + p {
     font-style: italic;
 }
 
+.highlight {
+    color: black;
+    font-style: italic;
+}
+/* Демонстрація position */
+.positioned-box {
+    position: relative;
+    background: #fdf3d2;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.positioned-box .label {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: crimson;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Демонстрація float */
+.float-container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #eef;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.float-box {
+    width: 350px;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    background-color: #cde;
+    text-align: center;
+    border-radius: 8px;
+}
+/* 1. Невідвідані */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* 2. Відвідані */
+a:visited {
+  color: yellow;
+}
+
+/* 3. Наведення */
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* 4. Натискання */
+a:active {
+  color: red;
+}
+
+/* :first-child для списків */
+ul li:first-child {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+/* ::before та ::after для заголовків */
+h2::before {
+    content: "👉 ";
+    color: teal;
+}
+
+h2::after {
+    content: " 👈";
+    color: teal;
+}
