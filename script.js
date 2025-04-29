@@ -76,6 +76,6 @@ function removeTechnology() {
     const block = document.getElementById("dynamic-block");
     const last = block.querySelector("p");
     if (last) {
-        last.remove(); // видаляємо, якщо є
+        last.remove(); // видаляємо, якщо
     }
 }
