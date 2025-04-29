@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Головна | 3D-Друк</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -29,9 +30,36 @@
     <div class="float-box">PLA пластик</div>
     <div class="float-box">SLA смола</div>
     <div class="float-box">Металевий порошок</div>
+
+
+</div>
+    <div class="container">
+        <button onclick="userDialog()">Діалог з користувачем</button>
+        <button onclick="showDeveloperInfo('Криницька', 'Каріна')">Показати розробника</button>
+        <button onclick="compareByLength()">Порівняти рядки</button>
+        <button onclick="redirectToPage()">Перейти на GitHub</button>
+        <p id="printer-info">Натисніть кнопку, щоб дізнатися більше.</p>
+<button onclick="showPrinterDetails()">Детальніше про FDM</button>
+<ul>
+    <li class="tech">FDM – Пластик</li>
+    <li class="tech">SLA – Смола</li>
+    <li class="tech">SLM – Метал</li>
+</ul>
+<button onclick="highlightTechnologies()">Підсвітити технології</button>
+<div id="printer-details">FDM: </div>
+<button onclick="addHTML()">Показати деталі</button>
+<p id="replace-me">Цей текст буде замінено</p>
+<button onclick="replaceElement()">Замінити блок</button>
+<p id="info-text">Про SLA-друк</p>
+<button onclick="editText()">Змінити текст</button>
+<p id="node-example">Металевий друк</p>
+<button onclick="changeNode()">Оновити</button>
+
+     <div id="dynamic-block">
+    <button onclick="showTechnology()">Додати технологію</button>
+    <button onclick="removeTechnology()">Видалити</button>
 </div>
 
-    <div class="container">
         <h2>Найкращі рішення для 3D-друку</h2>
         <p>Ми пропонуємо широкий спектр послуг з <b>3D-друку</b>, використовуючи сучасні технології.</p>
 

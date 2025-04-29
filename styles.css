@@ -635,11 +635,11 @@ ul li:first-child {
 
 /* ::before та ::after для заголовків */
 h2::before {
-    content: "👉 ";
+    content: "-> ";
     color: teal;
 }
 
 h2::after {
-    content: " 👈";
+    content: " <-";
     color: teal;
 }
