@@ -643,3 +643,17 @@ h2::after {
     content: " <-";
     color: teal;
 }
+.site-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.site-button:hover {
+    background-color: #666;
+}

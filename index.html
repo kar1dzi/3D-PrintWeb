@@ -114,6 +114,37 @@
 </dl>
         <p>Хочете дізнатися більше про нашу команду? <a href="about.html#about-team">Перейти до команди</a></p>
 
+        <!-- Кнопка з викликом через атрибут -->
+<button onclick="showContactInfo()" class="site-button">Зв'язатися з нами</button>
+
+<!-- Кнопка з викликом через властивість -->
+<button id="more-info-button" class="site-button">Дізнатися про SLA-друк</button>
+
+<h3>Виберіть тип 3D-друку:</h3>
+<ul id="print-list">
+    <li>FDM - Друк з пластику</li>
+    <li>SLA - Друк з фотополімерної смоли</li>
+    <li>SLM - Друк з металу</li>
+</ul>
+
+        <div class="container">
+    <h2>Меню 3D-друку</h2>
+    <div id="print-menu">
+        <button data-action="fdm">Про FDM</button>
+        <button data-action="sla">Про SLA</button>
+        <button data-action="slm">Про SLM</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Обрати тип 3D-друку з поведінкою</h2>
+    <div id="behavior-menu">
+        <button data-behavior="fdm">Інфо FDM</button>
+        <button data-behavior="sla">Інфо SLA</button>
+        <button data-behavior="slm">Інфо SLM</button>
+    </div>
+</div>
+
 
     </div>
 
