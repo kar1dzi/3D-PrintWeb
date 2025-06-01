@@ -219,3 +219,69 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+//8 лаба
+document.addEventListener("DOMContentLoaded", function () {
+    const list = document.getElementById("material-list");
+
+    list.addEventListener("mouseover", function (event) {
+        if (event.target.tagName === "LI") {
+            event.target.style.setProperty("background-color", "#d9ead3", "important");
+            event.target.style.setProperty("font-weight", "bold", "important");
+        }
+    });
+
+    list.addEventListener("mouseout", function (event) {
+        if (event.target.tagName === "LI") {
+            event.target.style.removeProperty("background-color");
+            event.target.style.removeProperty("font-weight");
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const detail = document.getElementById("detail");
+    const dropZone = document.getElementById("check-zone");
+    const message = document.getElementById("message");
+
+    let offsetX, offsetY;
+    let isDragging = false;
+    let locked = false; //  стан фіксації
+
+    detail.addEventListener("mousedown", (e) => {
+        if (locked) return; // Заборонити повторне перетягування
+        isDragging = true;
+        offsetX = e.clientX - detail.offsetLeft;
+        offsetY = e.clientY - detail.offsetTop;
+        detail.style.cursor = "grabbing";
+    });
+
+    document.addEventListener("mousemove", (e) => {
+        if (isDragging && !locked) {
+            detail.style.left = e.clientX - offsetX + "px";
+            detail.style.top = e.clientY - offsetY + "px";
+        }
+    });
+
+    document.addEventListener("mouseup", () => {
+        if (isDragging) {
+            isDragging = false;
+            detail.style.cursor = "grab";
+
+            const detailRect = detail.getBoundingClientRect();
+            const zoneRect = dropZone.getBoundingClientRect();
+
+            if (
+                detailRect.left < zoneRect.right &&
+                detailRect.right > zoneRect.left &&
+                detailRect.top < zoneRect.bottom &&
+                detailRect.bottom > zoneRect.top
+            ) {
+                message.textContent = "Перевірка пройдена!";
+                dropZone.style.backgroundColor = "#d9ead3";
+                detail.style.cursor = "default";
+                locked = true; // Зафіксувати
+            }
+        }
+    });
+});
