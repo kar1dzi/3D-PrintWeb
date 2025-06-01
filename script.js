@@ -79,6 +79,7 @@ function removeTechnology() {
         last.remove(); // видаляємо, якщо
     }
 }
+//7 лаба
 // Обробник через атрибут
 function showContactInfo() {
     alert("Телефонуйте нам: +38 (050) 123-45-67 або пишіть на email: contact@3dprint.com");
